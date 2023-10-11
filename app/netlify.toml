@@ -1,7 +1,7 @@
 [build]
   functions = "functions"
-	command = "yarn build && yarn generate"
-	publish = ".nuxt"
+	command = "yarn generate"
+	publish = "dist"
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
