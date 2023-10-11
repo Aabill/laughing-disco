@@ -2,6 +2,7 @@
 	command = "yarn generate"
   functions = "functions"
 	publish = "dist"
+	node_bundler = "esbuild"
 
 [dev]
 	command = "yarn dev"
@@ -9,6 +10,7 @@
 	port = 3001
 	targetPort = 3000
 	publish = "dist"
+	node_bundler = "esbuild"
 
 [[redirects]]
   from = "/api/*"

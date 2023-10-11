@@ -11,13 +11,14 @@
     "docker-exec": "docker exec -it my-nuxt-netlify-app-1 /bin/sh",
     "serve-functions": "netlify functions:serve",
     "create-function": "netlify functions:create",
-		"build-functions": "netlify functions:build",
-		"net-dev": "netlify dev",
-		"net-build": "netlify build"
+    "build-functions": "netlify functions:build",
+    "net-dev": "netlify dev",
+    "net-build": "netlify build"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "autoprefixer": "^10.4.16",
+    "esbuild": "^0.19.4",
     "netlify-cli": "^16.5.1",
     "nuxt": "^3.7.4",
     "postcss": "^8.4.31",
