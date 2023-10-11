@@ -1,7 +1,7 @@
 [build]
 	command = "yarn generate"
   functions = "functions"
-	publish = ".output/static"
+	publish = "dist"
 
 [dev]
 	command = "yarn dev"
@@ -9,8 +9,6 @@
 	port = 3001
 	targetPort = 3000
 	publish = "dist"
-
-	
 
 [[redirects]]
   from = "/api/*"
