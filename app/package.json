@@ -9,9 +9,10 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "docker-exec": "docker exec -it my-nuxt-netlify-app-1 /bin/sh",
-    "serve-functions": "NODE_OPTIONS=--inspect netlify functions:serve --port=3001",
+    "serve-functions": "netlify functions:serve",
     "create-function": "netlify functions:create",
-		"build-functions": "netlify functions:build"
+		"build-functions": "netlify functions:build",
+		"net-dev": "netlify dev"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

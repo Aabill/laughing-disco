@@ -1,3 +1,17 @@
+[build]
+	command = "yarn generate"
+  functions = "functions"
+	publish = "dist"
+
+[dev]
+	command = "yarn dev"
+	functions = "functions"
+	port = 3001
+	targetPort = 3000
+	publish = "dist"
+
+	
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
@@ -7,9 +21,3 @@
   from = "/old-page"
   to = "/new-page"
   status = 301
-
-[build]
-  functions = "functions"
-	command = "yarn generate"
-	publish = "dist"
-

@@ -10,7 +10,7 @@ services:
     ports:
       - "3331:3000"
       - "3332:3001"
-    command: sh -c "yarn dev"
+    command: sh -c "yarn net-dev"
     networks:
       - my-nsfnet
 networks:
