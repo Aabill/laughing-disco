@@ -16,6 +16,7 @@
   status = 200
 
 [[redirects]]
-  from = "/old-page"
-  to = "/new-page"
-  status = 301
+  from = "/testing/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+	force = true
