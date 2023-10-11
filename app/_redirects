@@ -1,1 +1,6 @@
 /old-path /new-path 301
+
+/testing/* /.netlify/functions/:splat 200
+
+/api/activity /https://www.boredapi.com/api/activity 200
+
