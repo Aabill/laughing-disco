@@ -1,7 +1,7 @@
 [build]
 	command = "yarn generate"
   functions = "functions"
-	publish = "dist"
+	publish = ".output/public"
 
 [dev]
 	command = "yarn dev"
