@@ -12,7 +12,8 @@
     "serve-functions": "netlify functions:serve",
     "create-function": "netlify functions:create",
 		"build-functions": "netlify functions:build",
-		"net-dev": "netlify dev"
+		"net-dev": "netlify dev",
+		"net-build": "netlify build"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
