@@ -12,7 +12,3 @@
 	publish = "dist"
 	node_bundler = "esbuild"
 
-[[redirects]]
-  from = "/api-dev/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
