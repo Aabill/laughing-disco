@@ -1,6 +1,6 @@
 [build]
   functions = "functions"
-	command = "yarn generate"
+	command = "yarn build && yarn generate"
 	publish = ".nuxt"
 [[redirects]]
   from = "/api/*"
