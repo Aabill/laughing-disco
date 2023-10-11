@@ -7,11 +7,5 @@ export default defineNuxtConfig({
 			tailwindcss: {},
 			autoprefixer: {}
 		}
-	}, 
-	nitro: {
-		routeRules: {
-			'/proxy/dev/**': { proxy: 'http://localhost:3001/.netlify/functions/**' },
-			'/proxy/prod/**': { proxy: '/.netlify/functions/**'}
-		}
 	}
 })
