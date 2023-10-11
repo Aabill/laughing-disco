@@ -23,6 +23,6 @@
 
 
 [[redirects]]
-  from = "/awew/hello-world"
-  to = "/.netlify/functions/:splat"
+  from = "/api/activity"
+  to = "https://www.boredapi.com/api/activity"
   status = 200
