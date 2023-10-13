@@ -11,8 +11,15 @@ export default defineNuxtConfig({
 	},
 	modules: ['@hebilicious/authjs-nuxt'],    
 	runtimeConfig: {
+		authJs: {
+			verifyClientOnEveryRequest: true,
+			guestRedirectTo: "/login", // where to redirect if the user is not authenticated
+			authenticatedRedirectTo: "/", // where to redirect if the user is authenticated
+			baseUrl: "https://aabill-nuxt.netlify.app" // should be something like https://www.my-app.com
+		},
     authJs: {
-      secret: process.env.NUXT_NEXTAUTH_SECRET // You can generate one with `openssl rand -base64 32`
+      secret: process.env.NUXT_NEXTAUTH_SECRET,
+			baseUrl: 'https://aabill-nuxt.netlify.app/' // You can generate one with `openssl rand -base64 32`
     },
     github: {
       clientId: process.env.NUXT_GITHUB_CLIENT_ID,
@@ -24,7 +31,7 @@ export default defineNuxtConfig({
         verifyClientOnEveryRequest: true, // whether to hit the /auth/session endpoint on every client request
 				guestRedirectTo: '/login'
       }
-    }
+    },
   },
 	alias: {
     cookie: resolve(__dirname, "node_modules/cookie")
