@@ -14,7 +14,7 @@ export const authOptions: AuthConfig = {
   providers: [
     GithubProvider({
       clientId: runtimeConfig.github.clientId,
-      clientSecret: runtimeConfig.github.clientSecret,
+      clientSecret: runtimeConfig.github.clientSecret
     })
   ]
 }
