@@ -1,4 +1,4 @@
 /old-path /new-path 301
 
-/api/* /.netlify/functions/:splat 200
+/apif/* /.netlify/functions/:splat 200
 
