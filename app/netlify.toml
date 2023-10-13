@@ -1,11 +1,11 @@
 [build]
-	command = "yarn generate"
+	command = "npm run generate"
   functions = "functions"
 	publish = "dist"
 	node_bundler = "esbuild"
 
 [dev]
-	command = "yarn dev"
+	command = "npm run dev"
 	functions = "functions"
 	port = 3001
 	targetPort = 3000
